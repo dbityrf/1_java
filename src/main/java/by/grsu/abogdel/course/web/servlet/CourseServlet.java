@@ -71,7 +71,7 @@ public class CourseServlet extends AbstractListServlet {
 		}).collect(Collectors.toList());
 
 		req.setAttribute("list", dtos); 
-		req.getRequestDispatcher("person.jsp").forward(req, res); 
+		req.getRequestDispatcher("course.jsp").forward(req, res); 
 	}
 
 	private void handleEditView(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {

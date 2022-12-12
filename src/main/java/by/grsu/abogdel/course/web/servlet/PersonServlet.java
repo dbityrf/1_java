@@ -69,7 +69,7 @@ public class PersonServlet extends AbstractListServlet {
 		}).collect(Collectors.toList());
 
 		req.setAttribute("list", dtos); // set data as request attribute (like "add to map") to be used later in JSP
-		req.getRequestDispatcher("person-list.jsp").forward(req, res); // delegate request processing to JSP
+		req.getRequestDispatcher("person.jsp").forward(req, res); // delegate request processing to JSP
 	}
 
 	private void handleEditView(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {

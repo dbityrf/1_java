@@ -53,48 +53,48 @@
 	</jsp-config>
 	
 	-->
-	
-		<servlet>
+
+	<servlet>
 		<servlet-name>RoleServlet</servlet-name>
 		<servlet-class>by.grsu.abogdel.course.web.servlet.RoleServlet</servlet-class>
 	</servlet>
-	
-		<servlet-mapping>
-		<servlet-name>RoleServlet</servlet-name>
-		<url-pattern>/role</url-pattern>
-	</servlet-mapping>
-	
-	
-	
+
 	<servlet>
-		<servlet-name>CourseServlet</servlet-name>
-		<servlet-class>by.grsu.abogdel.course.web.servlet.CourseServlet</servlet-class>
+		<servlet-name>Course2StudentServlet</servlet-name>
+		<servlet-class>by.grsu.abogdel.course.web.servlet.Course2StudentServlet</servlet-class>
 	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>CourseServlet</servlet-name>
-		<url-pattern>/course</url-pattern>
-	</servlet-mapping>
-	
-	
-	
+
 	<servlet>
 		<servlet-name>PersonServlet</servlet-name>
 		<servlet-class>by.grsu.abogdel.course.web.servlet.PersonServlet</servlet-class>
 	</servlet>
-	
+
+
+	<servlet>
+		<servlet-name>CourseServlet</servlet-name>
+		<servlet-class>by.grsu.abogdel.course.web.servlet.CourseServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CourseServlet</servlet-name>
+		<url-pattern>/course</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RoleServlet</servlet-name>
+		<url-pattern>/role</url-pattern>
+	</servlet-mapping>
+
+
+
 	<servlet-mapping>
 		<servlet-name>PersonServlet</servlet-name>
 		<url-pattern>/person</url-pattern>
 	</servlet-mapping>
-	
-		<servlet>
-		<servlet-name>Course2StudentServlet</servlet-name>
-		<servlet-class>by.grsu.abogdel.course.web.servlet.Course2StudentServlet</servlet-class>
-	</servlet>
-	
+
+
+
 	<servlet-mapping>
-		<servlet-name>Course2StudentTypesServlet</servlet-name>
-		<url-pattern>/Course2Student-types</url-pattern>
+		<servlet-name>Course2StudentServlet</servlet-name>
+		<url-pattern>/course2Student</url-pattern>
 	</servlet-mapping>
 </web-app>

@@ -50,7 +50,7 @@ public class RoleServlet extends HttpServlet {
 		}).collect(Collectors.toList());
 
 		req.setAttribute("list", dtos);
-		req.getRequestDispatcher("role-list.jsp").forward(req, res);
+		req.getRequestDispatcher("role.jsp").forward(req, res);
 	}
 
 	private void handleEditView(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {

@@ -10,7 +10,7 @@
 			<div class="row">
 				<div class="col s12">
 					<div class="center-align">
-						<a class="btn-floating btn-large waves-effect waves-light" href="edit.jsp"><i class="material-icons">add</i></a>
+						<a class="btn-floating btn-large waves-effect waves-light" href="course-edit.jsp"><i class="material-icons">add</i></a>
 					</div>
 				</div>
 			</div>

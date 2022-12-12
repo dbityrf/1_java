@@ -27,7 +27,7 @@ import by.grsu.abogdel.course.web.dto.RoleDto;
 import by.grsu.abogdel.course.web.dto.Course2StudentDto;
 import by.grsu.abogdel.course.web.dto.TableStateDto;
 
-public class Course_2_StudentServlet extends AbstractListServlet {
+public class Course2StudentServlet extends AbstractListServlet {
 	private static final IDao<Integer, Course> courseDao = CourseDaoImpl.INSTANCE;
 	private static final IDao<Integer, Person> personDao = PersonDaoImpl.INSTANCE;
 	private static final IDao<Integer, Course2Student> course2studentDao = Course2StudentDaoImpl.INSTANCE;
@@ -66,7 +66,7 @@ public class Course_2_StudentServlet extends AbstractListServlet {
 		}).collect(Collectors.toList());
 
 		req.setAttribute("list", dtos); // set data as request attribute (like "add to map") to be used later in JSP
-		req.getRequestDispatcher("course2student-list.jsp").forward(req, res); // delegate request processing to JSP
+		req.getRequestDispatcher("course2student.jsp").forward(req, res); // delegate request processing to JSP
 	}
 
 	private void handleEditView(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
@@ -83,11 +83,11 @@ public class Course_2_StudentServlet extends AbstractListServlet {
 		}
 		req.setAttribute("dto", dto);
 		req.setAttribute("allCourses", getAllCoursesDtos());
-		req.getRequestDispatcher("course-edit.jsp").forward(req, res);
+		req.getRequestDispatcher("course2student-edit.jsp").forward(req, res);
 		
 		req.setAttribute("dto", dto);
 		req.setAttribute("allPersons", getAllPersonsDtos());
-		req.getRequestDispatcher("course-edit.jsp").forward(req, res);
+		req.getRequestDispatcher("course2student-edit.jsp").forward(req, res);
 	}
 
 	private List<CourseDto> getAllCoursesDtos() {
